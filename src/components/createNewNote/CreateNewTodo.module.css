@@ -1,0 +1,17 @@
+.createNewTodo {
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createNewTodo input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #f5f5f5;
+    
+}

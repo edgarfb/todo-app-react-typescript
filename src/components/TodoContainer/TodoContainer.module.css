@@ -8,3 +8,24 @@
     margin-top: 1rem;
     border-radius: .5rem;
 }
+
+.todosSorter {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.aboutTodoList {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

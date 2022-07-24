@@ -7,6 +7,7 @@ import TodoIten from '../Todo/TodoIten';
 
 export default function TodoContainer() {
     const todos = useTodos();
+    const todoLength = todos.length;
     const dispatch = useTodoDispatch();
     return (
         <div className={styles.todosContainer}>
@@ -14,8 +15,19 @@ export default function TodoContainer() {
 
             <div className={styles.todosList}>
                 {todos.map(todo => <TodoIten todo={todo} />)}
-
+                <div className={styles.aboutTodoList}>
+                    <span>{`${todoLength} ${todoLength > 0 ? 'items' : 'item'} left`}</span>
+                    <button onClick={() => console.log('This will remove all completed todos')}>Clear Completed</button>
+                </div>
             </div>
+
+
+            <div className={styles.todosSorter}>
+                <button onClick={() => console.log('Implement this!!!')}>All</button>
+                <button onClick={() => console.log('Implement this!!!')}>Active</button>
+                <button onClick={() => console.log('Implement this!!!')}>Completed</button>
+            </div>
+
         </div>
     )
 }
