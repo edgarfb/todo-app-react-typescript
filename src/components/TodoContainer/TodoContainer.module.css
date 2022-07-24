@@ -1,0 +1,10 @@
+.todosContainer {
+    background-color: tomato;
+    padding: 1rem;
+}
+
+.todosList {
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}

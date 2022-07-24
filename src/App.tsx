@@ -1,24 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Background from './components/Background/Background';
+import CreateNewTodo from './components/createNewNote/CreateNewTodo';
+import { TodoContextDispatch, TodoContextProvider } from './context/todoContext';
+import TodoContainer from './components/TodoContainer/TodoContainer';
+
+
+
+interface Todo {
+  id: string;
+  title: string;
+  completed: boolean;
+}
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Background/> */}
+      <TodoContextProvider>
+        {/* <CreateNewTodo /> */}
+        <TodoContainer />
+      </TodoContextProvider>
+
     </div>
   );
 }

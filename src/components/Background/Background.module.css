@@ -1,0 +1,17 @@
+.background {
+    position: relative;
+}
+
+
+.backgroundImage {
+    background-image: url('/public/images/bg-mobile-light.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 170px;
+
+}
+
+.baclgroundGray {
+    background-color: lightgray;
+    height: calc(100vh - 170px);
+}

@@ -1,0 +1,9 @@
+.todoIten {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* TODO: This need to be finished  */
