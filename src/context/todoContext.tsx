@@ -64,6 +64,8 @@ function todoReducer(state: State, action: Actions) {
     switch (action.type) {
         case "ADD_TODO":
             return [...state, action.payload];
+        case "REMOVE_TODO":
+            return state.filter(todo => todo.id !== action.payload.id);
         case "MAKE_TODO_COMPLETED":
             return state.map(todo => {
                 if (todo.id === action.payload.id) {

@@ -24,7 +24,12 @@ export default function TodoIten({ todo }: TodoProps) {
          }} />
          <span className={`${isTodoCompleted ? styles.completed : ''}`}>{todo.title}</span>
          <button onClick={() => {
-            console.log('Impelement this!!!');
+            dispatch({
+               type: "REMOVE_TODO",
+               payload: {
+                  id: todo.id,
+               }
+            });
          }}>X</button>
       </div>
    )
