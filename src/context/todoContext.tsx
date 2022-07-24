@@ -3,7 +3,7 @@ import { Todo } from '../types/todos';
 
 interface Actions {
     type: string;
-    payload: any;
+    payload?: any;
 }
 
 type State = Todo[] | [];
@@ -74,6 +74,12 @@ function todoReducer(state: State, action: Actions) {
                 }
                 return todo
             })
+        case "CLEAR_COMPLETED_TODOS":
+            return state.filter(todo => !todo.completed)
+        case "ALL_TODOS":
+            return state
+        // I'm not sure if this is the best way to do this
+        // I will try to find a better way to do this like a router
 
         default:
             return state

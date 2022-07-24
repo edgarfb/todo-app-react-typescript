@@ -7,7 +7,8 @@ import TodoIten from '../Todo/TodoIten';
 
 export default function TodoContainer() {
     const todos = useTodos();
-    console.log('Todos: ', todos);
+    const todosCompleted = todos.filter(todo => todo.completed);
+    // console.log('Todos: ', todos);
     const todoLength = todos.length;
     const dispatch = useTodoDispatch();
     return (
@@ -18,15 +19,22 @@ export default function TodoContainer() {
                 {todos.map(todo => <TodoIten key={todo.id} todo={todo} />)}
                 <div className={styles.aboutTodoList}>
                     <span>{`${todoLength} ${todoLength > 0 ? 'items' : 'item'} left`}</span>
-                    <button onClick={() => console.log('This will remove all completed todos')}>Clear Completed</button>
+                    <button onClick={() => {
+                        dispatch({
+                            type: "CLEAR_COMPLETED_TODOS",
+                        })
+                    }}>Clear Completed</button>
                 </div>
             </div>
 
 
             <div className={styles.todosSorter}>
-                <button onClick={() => console.log('Implement this!!!')}>All</button>
+                <button onClick={() => dispatch({
+                    type: "ALL_TODOS",
+                })}>All</button>
                 <button onClick={() => console.log('Implement this!!!')}>Active</button>
                 <button onClick={() => console.log('Implement this!!!')}>Completed</button>
+
             </div>
 
         </div>
