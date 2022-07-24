@@ -3,7 +3,7 @@ import { Todo } from '../types/todos';
 
 interface Actions {
     type: string;
-    payload: Todo;
+    payload: any;
 }
 
 type State = Todo[] | [];
@@ -63,8 +63,15 @@ export const useTodoDispatch = () => {
 function todoReducer(state: State, action: Actions) {
     switch (action.type) {
         case "ADD_TODO":
-            return [...state, action.payload]
-
+            return [...state, action.payload];
+        case "MAKE_TODO_COMPLETED":
+            return state.map(todo => {
+                if (todo.id === action.payload.id) {
+                    console.log('im here')
+                    return { ...todo, completed: action.payload.completed }
+                }
+                return todo
+            })
 
         default:
             return state

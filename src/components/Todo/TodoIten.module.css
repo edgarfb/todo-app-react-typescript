@@ -6,4 +6,9 @@
     align-items: center;
 
 }
+
+
+.completed {
+    text-decoration: line-through;
+}
 /* TODO: This need to be finished  */
