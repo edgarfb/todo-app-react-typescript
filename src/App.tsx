@@ -1,31 +1,28 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Background from './components/Background/Background';
-import CreateNewTodo from './components/createNewNote/CreateNewTodo';
-import { TodoContextDispatch, TodoContextProvider } from './context/todoContext';
+import { TodoContextProvider } from './context/todoContext';
 import TodoContainer from './components/TodoContainer/TodoContainer';
+import ThemeProvider, { useTheme } from './context/themeContext';
 
 
 
-interface Todo {
-  id: string;
-  title: string;
-  completed: boolean;
-}
+
 
 function App() {
-
+  const theme = useTheme();
 
   return (
-    <div className="App">
-      {/* <Background/> */}
+
+    <div className={theme}>
+      <Background />
       <TodoContextProvider>
-        {/* <CreateNewTodo /> */}
         <TodoContainer />
       </TodoContextProvider>
-
     </div>
+
+
+
   );
 }
 

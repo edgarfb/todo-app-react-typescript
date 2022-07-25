@@ -1,15 +1,28 @@
 .todosContainer {
-    background-color: tomato;
-    padding: 1rem;
+    margin: 0 1rem;
+    height: 100vh;
+    position: absolute;
+    width: calc(100% - 2rem);
+    z-index: 100;
 }
 
-.active {
-    color: red;
+.todoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todoHeader h1 {
+    letter-spacing: .5rem;
+    color: white;
+}
+
+.todosSorter .active {
+    color: var(--link-active);
     font-weight: bold;
 }
 
 .todosSorter {
-    background-color: white;
+    background-color: var(--bg-item);
     margin-top: 1rem;
     padding: 1rem;
     border-radius: .5rem;
@@ -19,6 +32,6 @@
 
 }
 .todosSorter a {
-    color: lightseagreen;
+    color: var(--primary-color);
     text-decoration: none;
 }

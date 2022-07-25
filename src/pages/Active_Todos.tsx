@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTodos } from '../context/todoContext';
-import TodoIten from '../components/Todo/TodoIten';
+import TodoItem from '../components/TodoItem/TodoItem';
 import AboutTodoList from '../components/AboutTodoList/AboutTodoList';
 
 export default function Active_Todos() {
@@ -9,7 +9,7 @@ export default function Active_Todos() {
     const todosLenght = todosAtive.length;
     return (
         <>
-            {todosAtive.map(todo => <TodoIten key={todo.id} todo={todo} />)}
+            {todosAtive.map(todo => <TodoItem key={todo.id} todo={todo} />)}
             <AboutTodoList todosLength={todosLenght} showClearCompleted={false} />
         </>
     )

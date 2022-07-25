@@ -1,5 +1,5 @@
 .createNewTodo {
-    background-color: white;
+    
     margin-top: 1rem;
     border-radius: .5rem;
     display: flex;
@@ -12,6 +12,6 @@
     padding: 1rem;
     border-radius: .5rem;
     border: none;
-    background-color: #f5f5f5;
+    background-color: var(--bg-item);
     
 }

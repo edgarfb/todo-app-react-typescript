@@ -1,4 +1,4 @@
-import React, { createContext, Dispatch, useReducer, useContext } from "react";
+import React, { createContext, useReducer, useContext } from "react";
 import { Todo } from '../types/todos';
 
 interface Actions {

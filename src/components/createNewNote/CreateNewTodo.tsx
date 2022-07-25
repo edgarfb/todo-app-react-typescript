@@ -9,7 +9,7 @@ export default function CreateNewTodo() {
     const dispatch = useTodoDispatch();
     return (
         <div className={styles.createNewTodo}>
-            <input type="text" placeholder="Title" onKeyUp={(e) => {
+            <input type="text" placeholder="Create a new todo..." onKeyUp={(e) => {
                 if (e.key === 'Enter') {
                     e.preventDefault()
                     dispatch({

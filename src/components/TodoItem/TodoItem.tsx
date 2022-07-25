@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './TodoIten.module.css';
+import styles from './TodoItem.module.css';
 import { Todo } from '../../types/todos';
 import { useTodoDispatch } from '../../context/todoContext';
 

@@ -4,10 +4,8 @@ import All_todos from '../../pages/All_todos';
 import Completed from '../../pages/Completed';
 import Active_Todos from '../../pages/Active_Todos';
 import {
-    BrowserRouter as Router,
     Routes,
     Route,
-    Link
 } from "react-router-dom";
 
 
