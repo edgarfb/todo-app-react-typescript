@@ -1,44 +1,45 @@
 import React from 'react'
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    NavLink
+} from "react-router-dom";
 import styles from './TodoContainer.module.css'
-import { useTodos, useTodoDispatch } from '../../context/todoContext';
+import { useTodos } from '../../context/todoContext';
 
 import CreateNewTodo from '../createNewNote/CreateNewTodo';
-import TodoIten from '../Todo/TodoIten';
+import All_todos from '../../pages/All_todos';
+import Completed from '../../pages/Completed';
+import Active_Todos from '../../pages/Active_Todos';
 
 export default function TodoContainer() {
+
     const todos = useTodos();
-    const todosCompleted = todos.filter(todo => todo.completed);
-    // console.log('Todos: ', todos);
-    const todoLength = todos.length;
-    const dispatch = useTodoDispatch();
     return (
         <div className={styles.todosContainer}>
-            <CreateNewTodo />
+            <Router>
+                <CreateNewTodo />
 
-            <div className={styles.todosList}>
-                {todos.map(todo => <TodoIten key={todo.id} todo={todo} />)}
-                <div className={styles.aboutTodoList}>
-                    <span>{`${todoLength} ${todoLength > 0 ? 'items' : 'item'} left`}</span>
-                    <button onClick={() => {
-                        dispatch({
-                            type: "CLEAR_COMPLETED_TODOS",
-                        })
-                    }}>Clear Completed</button>
+                <div className={styles.todosList}>
+                    <Routes>
+                        <Route path="/" element={<All_todos />} />
+                        <Route path="/active" element={<Active_Todos />} />
+                        <Route path="/completed" element={<Completed />} />
+                    </Routes>
                 </div>
-            </div>
 
 
-            <div className={styles.todosSorter}>
-                <button onClick={() => dispatch({
-                    type: "ALL_TODOS",
-                })}>All</button>
-                <button onClick={() => console.log('Implement this!!!')}>Active</button>
-                <button onClick={() => console.log('Implement this!!!')}>Completed</button>
+                <div className={styles.todosSorter}>
+                    <NavLink className={({ isActive }) => isActive ? styles.active : ''} to="/">All</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? styles.active : ''} to="/active">Active</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? styles.active : ''} to="/completed">Completed</NavLink>
 
-            </div>
+
+                </div>
+            </Router>
+
 
         </div>
     )
 }
-
-// TODO: Add a footer to the todo list for amount of todos and a button to clear all todos

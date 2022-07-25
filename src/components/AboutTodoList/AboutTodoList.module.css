@@ -1,0 +1,9 @@
+.aboutTodoList {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

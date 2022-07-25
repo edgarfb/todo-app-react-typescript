@@ -3,10 +3,9 @@
     padding: 1rem;
 }
 
-.todosList {
-    background-color: white;
-    margin-top: 1rem;
-    border-radius: .5rem;
+.active {
+    color: red;
+    font-weight: bold;
 }
 
 .todosSorter {
@@ -19,13 +18,7 @@
     align-items: center;
 
 }
-
-.aboutTodoList {
-    background-color: white;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: .5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.todosSorter a {
+    color: lightseagreen;
+    text-decoration: none;
 }
