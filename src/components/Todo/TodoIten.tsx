@@ -9,10 +9,11 @@ interface TodoProps {
 
 export default function TodoIten({ todo }: TodoProps) {
    const [isTodoCompleted, setIsTodoCompleted] = useState(false);
+
    const dispatch = useTodoDispatch();
    return (
       <div className={styles.todoIten}>
-         <input type="checkbox" onChange={(e) => {
+         <input type="checkbox" checked={todo.completed} onChange={(e) => {
             setIsTodoCompleted((prev) => prev = e.target.checked)
             dispatch({
                type: "MAKE_TODO_COMPLETED",
@@ -22,7 +23,7 @@ export default function TodoIten({ todo }: TodoProps) {
                },
             })
          }} />
-         <span className={`${isTodoCompleted ? styles.completed : ''}`}>{todo.title}</span>
+         <span className={`${todo.completed ? styles.completed : ''}`}>{todo.title}</span>
          <button onClick={() => {
             dispatch({
                type: "REMOVE_TODO",
@@ -35,6 +36,3 @@ export default function TodoIten({ todo }: TodoProps) {
    )
 }
 
-// TODO: Add a button to delete the todo
-// TODO: Add a button to edit the todo
-// TODO: Add a button to complete the todo
