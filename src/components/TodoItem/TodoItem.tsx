@@ -1,28 +1,21 @@
 import React, { useState } from 'react';
-import styles from './TodoIten.module.css';
+import styles from './TodoItem.module.css';
 import { Todo } from '../../types/todos';
 import { useTodoDispatch } from '../../context/todoContext';
+import Checkbox from '../UI/Checkbox/Checkbox';
+
 
 interface TodoProps {
    todo: Todo;
 }
 
 export default function TodoIten({ todo }: TodoProps) {
-   const [isTodoCompleted, setIsTodoCompleted] = useState(false);
 
    const dispatch = useTodoDispatch();
    return (
       <div className={styles.todoIten}>
-         <input type="checkbox" checked={todo.completed} onChange={(e) => {
-            setIsTodoCompleted((prev) => prev = e.target.checked)
-            dispatch({
-               type: "MAKE_TODO_COMPLETED",
-               payload: {
-                  id: todo.id,
-                  completed: e.target.checked
-               },
-            })
-         }} />
+         <Checkbox isChecked={todo.completed} todoId={todo.id} />
+
          <span className={`${todo.completed ? styles.completed : ''}`}>{todo.title}</span>
          <button onClick={() => {
             dispatch({
@@ -31,7 +24,9 @@ export default function TodoIten({ todo }: TodoProps) {
                   id: todo.id,
                }
             });
-         }}>X</button>
+         }}>
+            <img src="./images/icon-cross.svg" alt="" />
+         </button>
       </div>
    )
 }

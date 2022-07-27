@@ -1,5 +1,6 @@
 .aboutTodoList {
-    background-color: white;
+    background-color: var(--bg-item);
+    color: var(--primary-color);
     margin-top: 1rem;
     padding: 1rem;
     border-radius: .5rem;

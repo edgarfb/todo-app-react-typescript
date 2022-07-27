@@ -1,5 +1,6 @@
 .todosList {
-    background-color: white;
+    background-color: var(--bg-item);
+    color: var(--secondary-color);
     margin-top: 1rem;
     border-radius: .5rem;
 }
