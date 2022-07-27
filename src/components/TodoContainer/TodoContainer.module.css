@@ -17,7 +17,7 @@
 }
 
 .todosSorter .active {
-    color: var(--link-active);
+    color: var(--BrightBlue);
     font-weight: bold;
 }
 

@@ -30,9 +30,9 @@ code {
 .light {
   --bg-item: white;
   --bg-container: hsl(235, 24%, 19%);
-  --primary-color: white;
+  --primary-color: hsl(234, 11%, 52%);
   --secondary-color: hsl(235, 24%, 19%);
-  --link-active: lightcoral;
+  --border-todo-item: hsl(233, 11%, 84%);
   --VeryLightGray: hsl(0, 0%, 98%);
   --VeryLightGrayishBlue: hsl(236, 33%, 92%);
   --LightGrayishBlue: hsl(233, 11%, 84%);
@@ -46,7 +46,7 @@ code {
   --bg-container: hsl(235, 24%, 19%);
   --primary-color: hsl(234, 11%, 52%);
   --secondary-color: hsl(236, 33%, 92%);
-  --link-active: hsl(220, 98%, 61%);;
+  --border-todo-item: hsl(233, 14%, 35%);
   --VeryDarkBlue: hsl(235, 21%, 11%);
   --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
   --LightGrayishBlue: hsl(234, 39%, 85%);

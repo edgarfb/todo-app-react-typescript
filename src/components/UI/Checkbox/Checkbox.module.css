@@ -1,12 +1,4 @@
-.todoIten {
-    padding: 1rem;
-    border-bottom: 1px solid var(--border-todo-item);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-/* .checkboxContainer {
+.checkboxContainer {
     position: relative;
     width: 20px;
     height: 20px;
@@ -50,21 +42,4 @@
     border: 1px solid var(--border-todo-item);
     border-radius: inherit;
     transition: all .3s ease-in-out;
-} */
-.todoIten button {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1.5rem;
-    color: var(--color-todo-item);
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
 }
-
-
-.completed {
-    text-decoration: line-through;
-}
-/* TODO: This need to be finished  */
