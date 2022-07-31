@@ -10,7 +10,8 @@ export default function CreateNewTodo() {
     return (
         <div className={styles.createNewTodo}>
             <input type="text" placeholder="Create a new todo..." onKeyUp={(e) => {
-                if (e.key === 'Enter') {
+                const todoInput: string = e.target.value
+                if (todoInput && e.key === 'Enter') {
                     e.preventDefault()
                     dispatch({
                         type: 'ADD_TODO',
