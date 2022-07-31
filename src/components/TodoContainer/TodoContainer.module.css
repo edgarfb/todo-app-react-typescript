@@ -1,15 +1,17 @@
 .todosContainer {
     margin: 0 1rem;
-    height: 100vh;
-    position: absolute;
+    max-width: 500px;
     width: calc(100% - 2rem);
     z-index: 100;
 }
+
+
 
 .todoHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1rem;
 }
 .todoHeader h1 {
     letter-spacing: .5rem;
@@ -24,6 +26,7 @@
 .todosSorter {
     background-color: var(--bg-item);
     margin-top: 1rem;
+    margin-bottom: 2rem;
     padding: 1rem;
     border-radius: .5rem;
     display: flex;
@@ -35,3 +38,9 @@
     color: var(--primary-color);
     text-decoration: none;
 }
+
+
+
+
+
+    

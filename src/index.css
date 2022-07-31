@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+/* * {
+  outline: 1px solid red;
+} */
 
 body {
   margin: 0;
   padding: 0;
+  font-size: 18px;
   font-family: 'Josefin Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,9 +33,10 @@ code {
 
 .light {
   --bg-item: white;
-  --bg-container: hsl(235, 24%, 19%);
+  --bg-container: hsl(236, 33%, 92%);
   --primary-color: hsl(234, 11%, 52%);
   --secondary-color: hsl(235, 24%, 19%);
+  --completed: hsl(233, 11%, 84%);
   --border-todo-item: hsl(233, 11%, 84%);
   --VeryLightGray: hsl(0, 0%, 98%);
   --VeryLightGrayishBlue: hsl(236, 33%, 92%);
@@ -44,8 +49,9 @@ code {
 .dark {
   --bg-item: hsl(237, 14%, 26%);
   --bg-container: hsl(235, 24%, 19%);
-  --primary-color: hsl(234, 11%, 52%);
-  --secondary-color: hsl(236, 33%, 92%);
+  --primary-color: hsl(234, 39%, 85%);
+  --secondary-color: hsl(234, 11%, 52%);
+  --completed: hsl(236, 9%, 61%);
   --border-todo-item: hsl(233, 14%, 35%);
   --VeryDarkBlue: hsl(235, 21%, 11%);
   --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);

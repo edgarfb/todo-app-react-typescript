@@ -4,53 +4,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-/* .checkboxContainer {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    
-    border-radius: 50%;
+    color: var(--primary-color);
 }
 
-.checkboxInput {
-    opacity: 0;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin: 0;
-    z-index: 100;
-}
-.unChecked {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-.notChecked {
-    display: none;
-}
-.checked {
-    display: block;
-    background-image: linear-gradient(to right, hsl(192, 100%, 67%) 0%, hsl(280, 87%, 65%) 100%);
-   position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-}
-
-.checked img {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-}
-.unChecked, .checked {
-    border: 1px solid var(--border-todo-item);
-    border-radius: inherit;
-    transition: all .3s ease-in-out;
-} */
 .todoIten button {
     background: none;
     border: none;
@@ -62,9 +18,13 @@
     width: 20px;
     height: 20px;
 }
+.todoIten button img {
+    width: 100%;
+    height: 100%;
+}
 
 
 .completed {
     text-decoration: line-through;
+    color: var(--completed);
 }
-/* TODO: This need to be finished  */

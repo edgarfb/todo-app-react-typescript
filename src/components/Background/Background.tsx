@@ -1,14 +1,13 @@
 import React from 'react'
 import styles from './Background.module.css'
+import { useTheme } from '../../context/themeContext'
 
-const Background = () => {
+export default function Background() {
+    const theme = useTheme();
     return (
         <div className={styles.background}>
-            <div className={styles.backgroundImage}></div>
-            <div className={styles.backgroundGray}></div>
+            <div className={styles.backgroundImage + " " + (theme === 'light' ? styles.bgLight : styles.bgDark)}></div>
 
         </div>
     )
 }
-
-export default Background

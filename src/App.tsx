@@ -14,12 +14,14 @@ function App() {
 
   return (
 
-    <div className={theme}>
-      <Background />
-      <TodoContextProvider>
+
+    <TodoContextProvider>
+      <div className={theme}>
+        <Background />
         <TodoContainer />
-      </TodoContextProvider>
-    </div>
+      </div>
+    </TodoContextProvider>
+
 
 
 
