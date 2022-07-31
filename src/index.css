@@ -18,7 +18,7 @@ code {
 }
 
 
-/* ## Colors
+/* ## Colors */
 
 :root {
   --BrightBlue: hsl(220, 98%, 61%);
@@ -31,7 +31,7 @@ code {
 /* ### Light Theme */
 
 .light {
-  --bg-checkbox: hsl(233, 11%, 84%);
+  --bg-checkbox: hsl(236, 9%, 71%);
   --bg-item: white;
   --bg-container: hsl(236, 33%, 92%);
   --primary-color: hsl(234, 11%, 52%);

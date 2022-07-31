@@ -8,6 +8,7 @@
 .createNewTodo input {
     font-family: 'Josefin Sans', sans-serif !important;
     color: var(--primary-color);
+    font-size: 18px;
     width: 100%;
     padding: 1rem;
     border-radius: .5rem;

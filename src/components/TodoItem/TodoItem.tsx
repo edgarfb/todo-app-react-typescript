@@ -19,7 +19,18 @@ export default function TodoIten({ todo }: TodoProps) {
       >
          <Checkbox isChecked={todo.completed} todoId={todo.id} />
 
-         <span className={`${styles.ItenTitle} ${todo.completed ? styles.done : ''}`}>{todo.title}</span>
+         <span
+            className={`${styles.ItenTitle} ${todo.completed ? styles.done : ''}`}
+            onClick={() => {
+               dispatch({
+                  type: "MAKE_TODO_COMPLETED",
+                  payload: {
+                     id: todo.id,
+                     completed: !todo.completed
+                  }
+               })
+            }}
+         >{todo.title}</span>
          <button
             className={`${styles.btnCrossHidden} ${showBtnCross ? styles.btnCross : ''}`}
             onClick={() => {
