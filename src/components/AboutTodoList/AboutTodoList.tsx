@@ -12,7 +12,7 @@ interface AboutTodoListProps {
 export default function AboutTodoList({ todosLength, showClearCompleted = true }: AboutTodoListProps) {
     const dispatch = useTodoDispatch();
     return (
-        <div className={styles.aboutTodoList}>
+        <div className={`${styles.aboutTodoList} ${todosLength > 3 ? styles.aboutTodoListReposition : ''}`}>
             <span>{`${todosLength} ${todosLength > 0 ? 'items' : 'item'} left`}</span>
             {showClearCompleted && <button onClick={() => {
                 dispatch({

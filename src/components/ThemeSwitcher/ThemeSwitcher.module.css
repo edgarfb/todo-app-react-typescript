@@ -1,7 +1,7 @@
 .themeSwitcher img {
     cursor: pointer;
     animation-name: fadeIn;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-timing-function: ease-in-out;
 }
 

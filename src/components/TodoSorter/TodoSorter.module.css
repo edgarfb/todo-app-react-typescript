@@ -1,0 +1,24 @@
+.todosSorter .active {
+    color: var(--BrightBlue);
+    font-weight: bold;
+}
+
+.todosSorter {
+    background-color: var(--bg-item);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.todosSorter a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.todosSorter a:hover {
+    color: var(--LightGrayishBlueHover);
+}

@@ -9,6 +9,7 @@ import { useTodos } from '../../context/todoContext';
 import CreateNewTodo from '../createNewNote/CreateNewTodo';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 import TodoList from '../TodoList/TodoList';
+import TodoSorter from '../TodoSorter/TodoSorter';
 
 import styles from './TodoContainer.module.css'
 
@@ -33,11 +34,7 @@ export default function TodoContainer() {
 
                 <TodoList />
 
-                <div className={styles.todosSorter}>
-                    <NavLink className={({ isActive }) => isActive ? styles.active : ''} to="/">All</NavLink>
-                    <NavLink className={({ isActive }) => isActive ? styles.active : ''} to="/active">Active</NavLink>
-                    <NavLink className={({ isActive }) => isActive ? styles.active : ''} to="/completed">Completed</NavLink>
-                </div>
+                <TodoSorter />
             </Router>
 
 

@@ -10,21 +10,26 @@ interface TodoProps {
 }
 
 export default function TodoIten({ todo }: TodoProps) {
-
+   const [showBtnCross, setShowBtnCross] = useState(false);
    const dispatch = useTodoDispatch();
    return (
-      <div className={styles.todoIten}>
+      <div className={styles.todoIten}
+         onMouseEnter={() => setShowBtnCross(true)}
+         onMouseLeave={() => setShowBtnCross(false)}
+      >
          <Checkbox isChecked={todo.completed} todoId={todo.id} />
 
-         <span className={`${todo.completed ? styles.completed : ''}`}>{todo.title}</span>
-         <button onClick={() => {
-            dispatch({
-               type: "REMOVE_TODO",
-               payload: {
-                  id: todo.id,
-               }
-            });
-         }}>
+         <span className={`${styles.ItenTitle} ${todo.completed ? styles.done : ''}`}>{todo.title}</span>
+         <button
+            className={`${styles.btnCrossHidden} ${showBtnCross ? styles.btnCross : ''}`}
+            onClick={() => {
+               dispatch({
+                  type: "REMOVE_TODO",
+                  payload: {
+                     id: todo.id,
+                  }
+               });
+            }}>
             <img src="./images/icon-cross.svg" alt="" />
          </button>
       </div>

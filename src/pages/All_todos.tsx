@@ -7,9 +7,9 @@ export default function All_todos() {
     const todos = useTodos();
     const todosLenght = todos.length;
     return (
-        <>
+        <div >
             {todos.map(todo => <TodoItem key={todo.id} todo={todo} />)}
             <AboutTodoList todosLength={todosLenght} showClearCompleted={false} />
-        </>
+        </div>
     )
 }

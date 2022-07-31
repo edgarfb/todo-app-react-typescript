@@ -23,21 +23,25 @@ code {
   ### Primary */
 
 :root {
+  --bg-checkbox: hsl(236, 9%, 61%);
   --BrightBlue: hsl(220, 98%, 61%);
   --CheckBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
 }
 
 /* ### Neutral */
 
+
 /* ### Light Theme */
 
 .light {
+  --bg-checkbox: hsl(233, 11%, 84%);
   --bg-item: white;
   --bg-container: hsl(236, 33%, 92%);
   --primary-color: hsl(234, 11%, 52%);
   --secondary-color: hsl(235, 24%, 19%);
   --completed: hsl(233, 11%, 84%);
   --border-todo-item: hsl(233, 11%, 84%);
+  --hoverColor: hsl(237, 14%, 26%);
   --VeryLightGray: hsl(0, 0%, 98%);
   --VeryLightGrayishBlue: hsl(236, 33%, 92%);
   --LightGrayishBlue: hsl(233, 11%, 84%);
@@ -47,12 +51,14 @@ code {
 
 /* Dark Theme */
 .dark {
+  --bg-checkbox: hsl(234, 11%, 52%);
   --bg-item: hsl(237, 14%, 26%);
   --bg-container: hsl(235, 24%, 19%);
   --primary-color: hsl(234, 39%, 85%);
   --secondary-color: hsl(234, 11%, 52%);
   --completed: hsl(236, 9%, 61%);
   --border-todo-item: hsl(233, 14%, 35%);
+  --hoverColor: hsl(236, 33%, 92%);
   --VeryDarkBlue: hsl(235, 21%, 11%);
   --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
   --LightGrayishBlue: hsl(234, 39%, 85%);

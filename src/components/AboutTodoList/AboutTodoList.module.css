@@ -7,4 +7,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.aboutTodoListReposition {
+    position: relative;
+    bottom: 0;
 }
