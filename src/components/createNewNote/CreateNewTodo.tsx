@@ -9,7 +9,8 @@ export default function CreateNewTodo() {
     const dispatch = useTodoDispatch();
     return (
         <form className={styles.createNewTodo}>
-            <input type="text" placeholder="Create a new todo..." onKeyUp={(e) => {
+            <label htmlFor="newTodoInput"></label>
+            <input type="text" id="newTodoInput" placeholder="Create a new todo..." onKeyUp={(e) => {
                 const todoInput: string = e.target.value
                 if (todoInput && e.key === 'Enter') {
                     e.preventDefault()
