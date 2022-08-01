@@ -7,8 +7,8 @@ export default function ThemeSwitcher() {
     const setTheme = useSetTheme();
     return (
         <div className={styles.themeSwitcher}>
-            {theme === 'dark' && (<img src="./images/icon-sun.svg" onClick={() => setTheme('light')} />)}
-            {theme === 'light' && (<img src="./images/icon-moon.svg" onClick={() => setTheme('dark')} />)}
+            {theme === 'dark' && (<img src="./images/icon-sun.svg" alt="" onClick={() => setTheme('light')} />)}
+            {theme === 'light' && (<img src="./images/icon-moon.svg" alt="" onClick={() => setTheme('dark')} />)}
 
         </div>
     )

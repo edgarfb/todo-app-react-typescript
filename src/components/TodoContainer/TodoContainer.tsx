@@ -25,10 +25,10 @@ export default function TodoContainer() {
         <div className={styles.todosContainer}>
             <Router>
 
-                <div className={styles.todoHeader}>
+                <header className={styles.todoHeader}>
                     <h1>TODO</h1>
                     <ThemeSwitcher />
-                </div>
+                </header>
 
                 <CreateNewTodo />
 

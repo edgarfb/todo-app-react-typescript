@@ -13,13 +13,13 @@ import {
 
 export default function TodoList() {
     return (
-        <div className={styles.todosList}>
+        <main className={styles.todosList}>
             <Routes>
                 <Route path="/" element={<All_todos />} />
                 <Route path="/active" element={<Active_Todos />} />
                 <Route path="/completed" element={<Completed />} />
             </Routes>
 
-        </div>
+        </main>
     )
 }
