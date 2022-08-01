@@ -14,8 +14,8 @@ export default function Checkbox({ isChecked, todoId }: checkboxProps) {
             <div className={`${styles.notChecked} ${isChecked ? styles.checked : ''}`}>
                 {isChecked && <img className={styles.checkIcon} src="./images/icon-check.svg" alt="" />}
             </div>
-            <label htmlFor="checkboxInput"></label>
-            <input type="checkbox" id="checkboxInput" className={styles.checkboxInput} checked={isChecked}
+            <label htmlFor={todoId}></label>
+            <input type="checkbox" id={todoId} className={styles.checkboxInput} checked={isChecked}
                 onMouseEnter={() => setIsCheckHover(true)}
                 onMouseLeave={() => setIsCheckHover(false)}
                 onChange={(e) => {
