@@ -10,7 +10,7 @@ export default function Active_Todos() {
     return (
         <>
             {todosAtive.map(todo => <TodoItem key={todo.id} todo={todo} />)}
-            <AboutTodoList todosLength={todosLenght} showClearCompleted={false} />
+            <AboutTodoList todosLength={todosLenght} />
         </>
     )
 }

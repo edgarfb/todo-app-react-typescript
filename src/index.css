@@ -39,18 +39,31 @@ code {
   --completed: hsl(233, 11%, 84%);
   --border-todo-item: hsl(233, 11%, 84%);
   --hoverColor: hsl(237, 14%, 26%);
+  --shadow: hsl(235, 24%, 19%);
   
 }
 
 /* Dark Theme */
 .dark {
-  --bg-checkbox: hsl(234, 11%, 52%);
-  --bg-item: hsl(237, 14%, 26%);
-  --bg-container: hsl(235, 24%, 19%);
+  --bg-checkbox: hsl(237, 14%, 26%);
+  --bg-item: hsl(235, 24%, 19%);
+  --bg-container: hsl(235, 21%, 11%);
   --primary-color: hsl(234, 39%, 85%);
   --secondary-color: hsl(234, 11%, 52%);
   --completed: hsl(236, 9%, 61%);
-  --border-todo-item: hsl(233, 14%, 35%);
+  --border-todo-item: hsl(237, 14%, 26%);
   --hoverColor: hsl(236, 33%, 92%);
+  --shadow: hsl(235, 24%, 19%);
   
+}
+
+
+.va {
+  -Very-Dark-Blue: hsl(235, 21%, 11%);
+  -Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  -Light-Grayish-Blue: hsl(234, 39%, 85%);
+  -Light-Grayish-Blue-Hover: hsl(236, 33%, 92%);
+  -Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  -Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  -Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
 }

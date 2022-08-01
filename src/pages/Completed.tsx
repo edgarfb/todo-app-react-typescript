@@ -9,7 +9,7 @@ export default function Completed() {
     return (
         <>
             {todosCompleted.map(todo => <TodoItem key={todo.id} todo={todo} />)}
-            <AboutTodoList todosLength={todosLenght} showClearCompleted={false} />
+            <AboutTodoList todosLength={todosLenght} />
         </>
     )
 }

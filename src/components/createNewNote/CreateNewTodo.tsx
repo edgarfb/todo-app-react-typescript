@@ -8,7 +8,7 @@ export default function CreateNewTodo() {
     const todos = useTodos();
     const dispatch = useTodoDispatch();
     return (
-        <form className={styles.createNewTodo}>
+        <div className={styles.createNewTodo}>
             <label htmlFor="newTodoInput"></label>
             <input type="text" id="newTodoInput" placeholder="Create a new todo..." onKeyUp={(e) => {
                 const todoInput: string = e.target.value
@@ -25,7 +25,7 @@ export default function CreateNewTodo() {
                     e.target.value = '';
                 }
             }} />
-        </form>
+        </div>
     )
 }
 
