@@ -6,7 +6,7 @@
 .todosSorter {
     background-color: var(--bg-item);
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 0 0 .5rem .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

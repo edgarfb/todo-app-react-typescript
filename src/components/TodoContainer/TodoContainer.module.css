@@ -13,9 +13,10 @@
     align-items: center;
     padding-top: 1rem;
 }
-.todoHeader h1 {
+.todoHeader h1 a {
     letter-spacing: .5rem;
     color: white;
+    text-decoration: none;
 }
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     BrowserRouter as Router,
-    NavLink
+    Link
 } from "react-router-dom";
 
 import { useTodos } from '../../context/todoContext';
@@ -26,7 +26,9 @@ export default function TodoContainer() {
             <Router>
 
                 <header className={styles.todoHeader}>
-                    <h1>TODO</h1>
+                    <h1>
+                        <Link to="/">TODO</Link>
+                    </h1>
                     <ThemeSwitcher />
                 </header>
 
