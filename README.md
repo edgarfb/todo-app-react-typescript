@@ -1,46 +1,90 @@
-# Getting Started with Create React App
+# Frontend Mentor - Todo app solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Todo App challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### The challenge
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for the section depending on their device's screen size
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+#### Desktop
+![screenshot desktop-dark](https://raw.githubusercontent.com/edgarfb/todo-app/main/desktop-dark.png)
+![screenshot desktop-light](https://raw.githubusercontent.com/edgarfb/todo-app/main/desktop-light.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Mobile
+![screenshot mobile-dark](./mobile-dark.png)
+![screenshot mobile-light](./mobile-light.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Solution URL: [Github repo](https://github.com/edgarfb/todo-app)
+- Live Site URL: [Todo App](https://edgarfb.github.io/todo-app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## My process
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Semantic HTML5 markup
+- CSS custom properties
+- SASS
+- Flexbox
+- Mobile-first workflow
+- Vanilla Javascript
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### What I learned
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I decided to solve this challenge without no library or framework to get a more deeper knowledge about javascript and DOM and I happy with my job. But also I figure out I need to keep going learnig becouse there is a lot to lear yet, and that is exciting to me. 
+Now to the next level.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Continued development
+
+I'm going to learn React or improve my basic knowledge about Angular. Also I'm going read more about design pattern, data structure and algorithms to improve my code.
+
+
+### Useful resources
+
+- [Dark and Light theme switcher using CSS variables and pure JavaScript](https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2)
+- [Frontend Master Bootcamp](https://frontendmasters.com/bootcamp/)
+
+#### Teachers
+
+- [Jen Kramer](https://frontendmasters.com/teachers/jen-kramer/)  Harvard University Extension School
+- [Brian Holt](https://frontendmasters.com/teachers/brian-holt/)  Microsoft
+
+
+- Conquering responsive layout by [Kevin Powell](https://courses.kevinpowell.co/conquering-responsive-layouts) - 
+This helped me for to achive a better layout. 
+
+
+## Author
+
+- Website - [Github](https://github.com/edgarfb)
+- Frontend Mentor - [edgarfb](https://www.frontendmentor.io/profile/edgarfb)
+- Twitter - [@edgarfb_ok](https://www.twitter.com/edgarfb_ok)
+
+
+## Acknowledgments
+
+I really enjoined and I learned a lot about layout whith the content of [Kevin Powell](https://www.kevinpowell.co/).\
+You guys can enroll on [this course](https://courses.kevinpowell.co/conquering-responsive-layouts) totaly free.
